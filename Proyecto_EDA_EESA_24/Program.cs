@@ -15,7 +15,7 @@
                         Console.Clear();
                         Console.WriteLine("\tMenú Listas");
                         Console.WriteLine("-------------------------");
-                        Console.WriteLine("1.-Insertar nodo");          //TERMINADO
+                        Console.WriteLine("1.-Insertar nodo");          //TERMINADO 
                         Console.WriteLine("2.-Imprimir tamaño");        //
                         Console.WriteLine("3.-Buscar nodo");            //
                         Console.WriteLine("4.-Borrar nodo");            //
