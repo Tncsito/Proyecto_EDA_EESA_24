@@ -15,13 +15,13 @@
                         Console.Clear();
                         Console.WriteLine("\tMenú Listas");
                         Console.WriteLine("-------------------------");
-                        Console.WriteLine("1.-Insertar nodo");          //TERMINADO 
-                        Console.WriteLine("2.-Imprimir tamaño");        //
-                        Console.WriteLine("3.-Buscar nodo");            //
-                        Console.WriteLine("4.-Borrar nodo");            //
-                        Console.WriteLine("5.-Modificar nodo");         //
-                        Console.WriteLine("6.-Buscar Valor");           //
-                        Console.WriteLine("7.-Imprimir Lista");         //
+                        Console.WriteLine("1.- Insertar nodo");          //TERMINADO 
+                        Console.WriteLine("2.- Imprimir tamaño");        //
+                        Console.WriteLine("3.- Buscar nodo");            //
+                        Console.WriteLine("4.- Borrar nodo");            //
+                        Console.WriteLine("5.- Modificar nodo");         //
+                        Console.WriteLine("6.- Buscar Valor");           //
+                        Console.WriteLine("7.- Imprimir Lista");         //TERMINADO
                         Console.WriteLine("-------------------------");
                         Console.Write("Seleccionar Opción => ");
                         int opc = int.Parse(Console.ReadLine());
@@ -30,11 +30,12 @@
                         {
                             case 1:
                                 Console.WriteLine("Teclear nodo a insertar:");
-                                Console.Write("Valor de nodo:");
+                                Console.Write("Valor de nodo: ");
                                 int uno = int.Parse(Console.ReadLine());
                                 a.Add(uno);
                                 break;
                             case 2:
+                                a.Count();
                                 break;
                             case 3:
                                 break;

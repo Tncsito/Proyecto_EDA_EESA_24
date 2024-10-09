@@ -31,10 +31,33 @@ namespace Proyecto_EDA_EESA_24.Lista
                 act.Sig = nuevo;
             }
         }
-        //public int Count()
-        //{
+        public int Count()
+        {
+            int s = 0;
+            if (inicio == null)
+            {
+                Console.WriteLine("La lista está vacía");
+            }
+            else
+            {
+                NODO act;
+                act = inicio;
+                while (act != null)
+                {
+                    if (act.Sig != null)
+                    {
+                        act = act.Sig; s++;
+                    }
+                    else
+                    {
+                        act = act.Sig;s++;
+                    }
+                }
+                Console.WriteLine(s);
+            }
+            return s;
+        }
 
-        //}
         //public int Find(int pos)
         //{
 
