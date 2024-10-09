@@ -63,8 +63,16 @@ namespace Proyecto_EDA_EESA_24.Lista
                 act = inicio;
                 while (act != null)
                 {
-                    Console.WriteLine($"{act.Valor}");
-                    act = act.Sig;
+                    Console.Write($"{act.Valor} => ");
+                    if (act.Sig != null)
+                    {
+                        act = act.Sig;
+                    }
+                    else
+                    {
+                        act = act.Sig;
+                        Console.Write("NULL");
+                    }
                 }
             }
         }
