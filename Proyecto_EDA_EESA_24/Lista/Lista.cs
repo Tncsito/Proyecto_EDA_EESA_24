@@ -62,10 +62,39 @@ namespace Proyecto_EDA_EESA_24.Lista
         //{
 
         //}
-        //public bool Delete(int pos)
-        //{
+        public bool Delete(int pos)
+        {
+            int s = 0;
+            if (inicio == null)
+            {
+                Console.WriteLine("La lista está vacía");
+            }
+            else
+            {
+                NODO act;
+                act = inicio;
+                while (act != null)
+                {
+                    if (act.Sig != null)
+                    {
+                        act = act.Sig; s++;
+                        if(s == pos)
+                        {
 
-        //}
+                        }
+                    }
+                    else
+                    {
+                        act = act.Sig; s++;
+                        if (s == pos)
+                        {
+
+                        }
+                    }
+                }
+            }
+            return true;
+        }
         //public bool Change(int pos, int num)
         //{
 

@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.ForegroundColor = ConsoleColor.Yellow; 
             Lista.Lista a = new Lista.Lista();
             try
             {
@@ -16,12 +16,13 @@
                         Console.WriteLine("\tMenú Listas");
                         Console.WriteLine("-------------------------");
                         Console.WriteLine("1.- Insertar nodo");          //TERMINADO 
-                        Console.WriteLine("2.- Imprimir tamaño");        //
+                        Console.WriteLine("2.- Imprimir tamaño");        //TERMINADO
                         Console.WriteLine("3.- Buscar nodo");            //
                         Console.WriteLine("4.- Borrar nodo");            //
                         Console.WriteLine("5.- Modificar nodo");         //
                         Console.WriteLine("6.- Buscar Valor");           //
                         Console.WriteLine("7.- Imprimir Lista");         //TERMINADO
+                        Console.WriteLine("8.- Salir");         //TERMINADO
                         Console.WriteLine("-------------------------");
                         Console.Write("Seleccionar Opción => ");
                         int opc = int.Parse(Console.ReadLine());
@@ -29,17 +30,27 @@
                         switch (opc)
                         {
                             case 1:
+                                Console.WriteLine("\tMenú Listas");
+                                Console.WriteLine("-------------------------");
+                                Console.WriteLine("1.- Insertar nodo");
                                 Console.WriteLine("Teclear nodo a insertar:");
                                 Console.Write("Valor de nodo: ");
                                 int uno = int.Parse(Console.ReadLine());
                                 a.Add(uno);
                                 break;
                             case 2:
+                                Console.WriteLine("\tMenú Listas");
+                                Console.WriteLine("-------------------------");
+                                Console.WriteLine("1.- Insertar nodo");          //TERMINADO 
+                                Console.WriteLine("2.- Imprimir tamaño"); 
+                                Console.Write("La lista tiene ");
                                 a.Count();
+                                Console.Write(" nodos");
                                 break;
                             case 3:
                                 break;
                             case 4:
+                                Console.Write("Dame posición: ");
                                 break;
                             case 5:
                                 break;
@@ -48,6 +59,8 @@
                             case 7:
                                 a.Print();
                                 break;
+                                case 8:
+                                return;
                             default:
                                 Console.WriteLine("\nPor favor Seleccione una Opción");
                                 break;
