@@ -58,11 +58,7 @@ namespace Proyecto_EDA_EESA_24.Lista
             return s;
         }
 
-        //public int Find(int pos)
-        //{
-
-        //}
-        public bool Delete(int pos)
+        public int Find(int pos)
         {
             int s = 0;
             if (inicio == null)
@@ -78,9 +74,9 @@ namespace Proyecto_EDA_EESA_24.Lista
                     if (act.Sig != null)
                     {
                         act = act.Sig; s++;
-                        if(s == pos)
+                        if (s == pos)
                         {
-
+                            return act.Valor;
                         }
                     }
                     else
@@ -88,11 +84,16 @@ namespace Proyecto_EDA_EESA_24.Lista
                         act = act.Sig; s++;
                         if (s == pos)
                         {
-
+                            return act.Valor;
                         }
                     }
                 }
             }
+            return -1;
+        }
+        public bool Delete(int pos)
+        {
+            
             return true;
         }
         //public bool Change(int pos, int num)

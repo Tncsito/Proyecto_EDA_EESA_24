@@ -30,24 +30,17 @@
                         switch (opc)
                         {
                             case 1:
-                                Console.WriteLine("\tMenú Listas");
-                                Console.WriteLine("-------------------------");
-                                Console.WriteLine("1.- Insertar nodo");
                                 Console.WriteLine("Teclear nodo a insertar:");
                                 Console.Write("Valor de nodo: ");
                                 int uno = int.Parse(Console.ReadLine());
                                 a.Add(uno);
                                 break;
                             case 2:
-                                Console.WriteLine("\tMenú Listas");
-                                Console.WriteLine("-------------------------");
-                                Console.WriteLine("1.- Insertar nodo");          //TERMINADO 
-                                Console.WriteLine("2.- Imprimir tamaño"); 
-                                Console.Write("La lista tiene ");
-                                a.Count();
-                                Console.Write(" nodos");
+                                int u = a.Count();
+                                Console.Write($"La lista tiene {u} nodo");
                                 break;
                             case 3:
+                                Console.WriteLine("Teclear nodo a insertar:"); //Terminalo, es del find
                                 break;
                             case 4:
                                 Console.Write("Dame posición: ");
