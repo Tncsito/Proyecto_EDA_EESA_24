@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Proyecto_EDA_EESA_24.Lista
 {
@@ -30,7 +31,7 @@ namespace Proyecto_EDA_EESA_24.Lista
                 }
                 act.Sig = nuevo;
             }
-        }
+        } //TERMINADO
         public int Count()
         {
             int s = 0;
@@ -56,7 +57,7 @@ namespace Proyecto_EDA_EESA_24.Lista
                 Console.WriteLine(s);
             }
             return s;
-        }
+        } //TERMINADO
 
         public int Find(int pos)
         {
@@ -93,7 +94,38 @@ namespace Proyecto_EDA_EESA_24.Lista
         }
         public bool Delete(int pos)
         {
-            
+            int s = 0;
+            NODO act;
+            NODO ant;
+            act = inicio;
+            ant = inicio;
+            while (act != null)
+            {
+                if (act != inicio) //va a entrar hasta que dé un paso act y esté atrás ant
+                {
+                    ant = ant.Sig; //aquí ant va primero y luego act
+                    if (act.Sig != null)
+                    {
+                        act = act.Sig; s++;
+                        if (s == pos)
+                        {
+                            return true;
+                        }
+                    }
+                    else
+                    {
+                        act = act.Sig; s++;
+                        if (s == pos)
+                        {
+                            return true;
+                        }
+                    }
+                }
+                else
+                {
+                    act = act.Sig;
+                }
+            }
             return true;
         }
         //public bool Change(int pos, int num)
@@ -128,9 +160,6 @@ namespace Proyecto_EDA_EESA_24.Lista
                     }
                 }
             }
-        }
-
-
-
+        } //TERMINADO
     }
 }
